@@ -1,0 +1,22 @@
+{
+    "C_Cpp.intelliSenseEngineFallback": "Disabled",
+    "files.associations": {
+        "__locale": "cpp",
+        "__functional_base": "cpp",
+        "array": "cpp",
+        "future": "cpp",
+        "istream": "cpp",
+        "locale": "cpp",
+        "memory": "cpp",
+        "thread": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp",
+        "functional": "cpp",
+        "*.tcc": "cpp",
+        "string_view": "cpp",
+        "iterator": "cpp",
+        "string": "cpp",
+        "vector": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
