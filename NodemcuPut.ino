@@ -1,4 +1,4 @@
-/* // add wifiname and password
+ // add wifiname and password
 // create the url according to your device and key
 //
 
@@ -46,7 +46,7 @@ void loop() {
     HTTPClient http;   
     USE_SERIAL.print("[HTTP] begin...\n");
     // instead of deviceID write your own device ID and enter the value of your key in key = you
-    http.begin("https://pushio.azurewebsites.net/getState/{deviceID}?key={YourKey}","3A B0 B1 C2 7F 74 6F D9 0C 34 F0 D6 A9 60 CF 73 A4 22 9D E8"); 
+    http.begin("https://pushio.azurewebsites.net/getState/anah?key=3443","3A B0 B1 C2 7F 74 6F D9 0C 34 F0 D6 A9 60 CF 73 A4 22 9D E8"); 
     // change the code according to your device
     http.addHeader("Content-Type", "application/json");  
  
@@ -60,9 +60,9 @@ void loop() {
         String payload = http.getString();
         USE_SERIAL.println(payload);
           if(payload=="0"){
-            digitalWrite(LED_BUILTIN, HIGH);}
+            digitalWrite(12, HIGH);}
           else
-            {digitalWrite(LED_BUILTIN, LOW);}
+            {digitalWrite(12, LOW);}
       }
     } else {
       USE_SERIAL.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
@@ -72,6 +72,3 @@ void loop() {
   }
 
 }
-
- */
-

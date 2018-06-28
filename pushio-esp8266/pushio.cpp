@@ -102,6 +102,6 @@ void pushio::connect(int pin)
 // 0x5 http get error
 
 String pushio::sync(){
-    int state =this.current_state();
+    int state = this.current_state();
     digitalWrite(_pin, state);
 }
